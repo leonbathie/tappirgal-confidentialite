@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tappirgal Pulaar — Politique de confidentialité</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; }
+  h3 { font-size: 1rem; margin-top: 1.5rem; }
+  .date { opacity: .7; font-size: .9rem; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid rgba(128,128,128,.35); vertical-align: top; }
+  th { font-weight: 600; }
+  .encadre {
+    border-left: 3px solid currentColor; padding: .1rem 0 .1rem 1rem;
+    margin: 1.25rem 0; opacity: .95;
+  }
+  hr { border: 0; border-top: 1px solid rgba(128,128,128,.35); margin: 3rem 0; }
+  code { font-size: .9em; }
+  @media (max-width: 30rem) { table, thead, tbody, tr, th, td { display: block; } th { padding-bottom: 0; } td { padding-top: .15rem; } tr { margin-bottom: .75rem; } }
+</style>
+</head>
+<body>
+
+<h1>Politique de confidentialité</h1>
+<p class="date">Tappirgal Pulaar — <code>com.pulaar.clavier</code><br>
+Dernière mise à jour : 13 septembre 2026</p>
+
+<p><strong>Tappirgal Pulaar est un clavier.</strong> Il voit donc tout ce que vous
+écrivez. Cette page dit ce qu'il en fait — et surtout ce qu'il n'en fait pas.</p>
+
+<div class="encadre">
+<p><strong>En une phrase :</strong> ce que vous tapez reste sur votre téléphone.
+Rien n'est collecté, rien n'est envoyé à un serveur, à une seule exception :
+le texte que <em>vous demandez</em> à traduire.</p>
+</div>
+
+<h2>Ce qui ne se fait pas</h2>
+
+<p>L'application ne contient <strong>aucun outil de mesure d'audience, aucun
+rapport d'incident automatique, aucune régie publicitaire, aucun traceur</strong>.
+Nous ne créons pas de compte, nous ne demandons pas votre identité, et nous ne
+possédons aucun serveur où vos données pourraient être conservées.</p>
+
+<p>Ce que vous tapez — messages, mots de passe, adresses, recherches — n'est
+transmis à personne, ni à nous, ni à un tiers.</p>
+
+<h2>Ce qui quitte le téléphone, et seulement cela</h2>
+
+<h3>1. La traduction, quand vous la demandez</h3>
+
+<p>Lorsque vous appuyez sur le bouton de traduction, le texte que vous avez saisi
+dans la boîte de traduction est envoyé à l'interface <em>Generative Language API</em>
+de Google (<code>generativelanguage.googleapis.com</code>) afin d'obtenir la
+traduction, puis affiché. C'est la seule adresse que l'application contacte.</p>
+
+<p>Rien d'autre ne l'accompagne : ni identifiant d'appareil, ni numéro de compte,
+ni historique. Google traite cette requête selon ses propres conditions
+(<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>).
+Si vous ne vous servez pas de la traduction, l'application n'émet aucune requête
+réseau.</p>
+
+<h3>2. La dictée vocale, quand vous la lancez</h3>
+
+<p>Le bouton du micro fait appel au <strong>service de reconnaissance vocale de
+votre téléphone</strong>, celui d'Android. Sur la plupart des appareils, ce
+service transmet l'audio aux serveurs de son éditeur — généralement Google — pour
+le transcrire. Ce traitement ne nous appartient pas et ne passe pas par nous :
+c'est le même que celui de n'importe quelle autre dictée sur votre appareil.
+L'enregistrement n'a lieu que pendant que la dictée est active, et nous n'en
+gardons rien.</p>
+
+<h2>Ce qui reste sur l'appareil</h2>
+
+<p>Tout le reste. Ces données sont écrites dans l'espace privé de l'application,
+que le système d'Android réserve à celle-ci, et ne sont jamais transmises :</p>
+
+<table>
+<tr><th>Donnée</th><th>À quoi elle sert</th><th>Combien de temps</th></tr>
+<tr>
+  <td>Le presse-papiers du clavier</td>
+  <td>Retrouver et recoller ce que vous avez copié</td>
+  <td><strong>Vingt minutes</strong>, puis effacé. Sauf les éléments que vous épinglez, gardés jusqu'à leur retrait. Un interrupteur du panneau arrête complètement cette mémoire.</td>
+</tr>
+<tr>
+  <td>Les mots que le clavier retient</td>
+  <td>Vous proposer les mots que vous employez, que les dictionnaires livrés ignorent — noms de famille, villages, parlers</td>
+  <td>Jusqu'à leur suppression, que la page des réglages permet mot par mot ou en bloc</td>
+</tr>
+<tr>
+  <td>Vos réglages</td>
+  <td>Thème, fond, hauteur des touches, raccourcis, phrases rapides</td>
+  <td>Jusqu'à la désinstallation</td>
+</tr>
+</table>
+
+<p>Désinstaller l'application efface tout cela. Vous pouvez aussi, sans
+désinstaller, vider le presse-papiers depuis son panneau et la liste des mots
+retenus depuis les réglages.</p>
+
+<h2>Les autorisations, et pourquoi</h2>
+
+<table>
+<tr><th>Autorisation</th><th>Pourquoi</th></tr>
+<tr>
+  <td><code>INTERNET</code></td>
+  <td>Uniquement pour la traduction décrite plus haut. Sans elle, le reste du clavier fonctionne à l'identique.</td>
+</tr>
+<tr>
+  <td><code>RECORD_AUDIO</code></td>
+  <td>La dictée vocale. Le micro ne s'active que pendant que vous dictez, et jamais autrement.</td>
+</tr>
+<tr>
+  <td><code>READ_MEDIA_IMAGES</code><br>(<code>READ_EXTERNAL_STORAGE</code> sur Android 12 et avant)</td>
+  <td>Proposer dans le presse-papiers les <strong>captures d'écran des vingt dernières minutes</strong>, pour les envoyer sans quitter la conversation. <strong>Éteint par défaut</strong> : il faut allumer le réglage « Récupérer les captures d'écran », qui demande alors l'autorisation. Les images sont lues sur l'appareil et n'en sortent pas ; lorsque vous en collez une, une copie temporaire est faite dans le cache de l'application le temps que l'application destinataire la reçoive, et elle est effacée au bout d'une heure.</td>
+</tr>
+</table>
+
+<p>L'application ne demande ni votre position, ni vos contacts, ni votre appareil
+photo, ni la liste de vos applications.</p>
+
+<h2>Les enfants</h2>
+
+<p>L'application ne s'adresse pas particulièrement aux enfants et ne collecte
+sciemment aucune donnée les concernant — n'en collectant aucune, quelle que soit
+la personne.</p>
+
+<h2>Les changements</h2>
+
+<p>Si cette politique change, la date en tête de page change avec elle, et la
+nouvelle version est publiée ici avant que la modification correspondante
+n'arrive dans l'application.</p>
+
+<h2>Nous écrire</h2>
+
+<p>Pour toute question sur cette politique ou sur vos données :
+<a href="mailto:taro.devps@gmail.com">taro.devps@gmail.com</a></p>
+
+<hr>
+
+<h1 id="en">Privacy Policy</h1>
+<p class="date">Tappirgal Pulaar — <code>com.pulaar.clavier</code><br>
+Last updated: 13 September 2026</p>
+
+<p><strong>Tappirgal Pulaar is a keyboard.</strong> It therefore sees everything
+you type. This page says what it does with that — and above all, what it
+does not.</p>
+
+<div class="encadre">
+<p><strong>In one sentence:</strong> what you type stays on your phone. Nothing is
+collected, nothing is sent to a server, with a single exception: the text
+<em>you ask</em> to have translated.</p>
+</div>
+
+<h2>What the app does not do</h2>
+
+<p>The app contains <strong>no analytics, no automatic crash reporting, no
+advertising SDK, no tracker</strong>. We create no account, we do not ask who you
+are, and we own no server on which your data could be kept.</p>
+
+<p>What you type — messages, passwords, addresses, searches — is transmitted to
+no one, neither to us nor to a third party.</p>
+
+<h2>What leaves the phone, and only this</h2>
+
+<h3>1. Translation, when you ask for it</h3>
+
+<p>When you press the translate button, the text you entered in the translation
+box is sent to Google's <em>Generative Language API</em>
+(<code>generativelanguage.googleapis.com</code>) to obtain the translation, which
+is then displayed. This is the only address the app contacts.</p>
+
+<p>Nothing accompanies it: no device identifier, no account number, no history.
+Google handles that request under its own terms
+(<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>).
+If you do not use translation, the app makes no network request at all.</p>
+
+<h3>2. Voice dictation, when you start it</h3>
+
+<p>The microphone button calls your phone's <strong>own speech recognition
+service</strong>, provided by Android. On most devices that service sends the
+audio to its vendor's servers — usually Google — for transcription. That
+processing is not ours and does not pass through us: it is the same one any other
+dictation on your device uses. Recording happens only while dictation is active,
+and we keep none of it.</p>
+
+<h2>What stays on the device</h2>
+
+<p>Everything else. This data is written to the app's private storage, which
+Android reserves for it, and is never transmitted:</p>
+
+<table>
+<tr><th>Data</th><th>What it is for</th><th>How long</th></tr>
+<tr>
+  <td>The keyboard clipboard</td>
+  <td>Finding and re-pasting what you copied</td>
+  <td><strong>Twenty minutes</strong>, then erased. Except items you pin, kept until you remove them. A switch in the panel turns this memory off entirely.</td>
+</tr>
+<tr>
+  <td>Words the keyboard learns</td>
+  <td>Suggesting the words you actually use, which the bundled dictionaries do not know — family names, villages, dialects</td>
+  <td>Until you delete them, one by one or all at once, from the settings page</td>
+</tr>
+<tr>
+  <td>Your settings</td>
+  <td>Theme, background, key height, text shortcuts, quick phrases</td>
+  <td>Until you uninstall</td>
+</tr>
+</table>
+
+<p>Uninstalling erases all of it. You can also, without uninstalling, empty the
+clipboard from its panel and the learned-word list from the settings.</p>
+
+<h2>Permissions, and why</h2>
+
+<table>
+<tr><th>Permission</th><th>Why</th></tr>
+<tr>
+  <td><code>INTERNET</code></td>
+  <td>Only for the translation described above. Without it, the rest of the keyboard works exactly the same.</td>
+</tr>
+<tr>
+  <td><code>RECORD_AUDIO</code></td>
+  <td>Voice dictation. The microphone is active only while you dictate, never otherwise.</td>
+</tr>
+<tr>
+  <td><code>READ_MEDIA_IMAGES</code><br>(<code>READ_EXTERNAL_STORAGE</code> on Android 12 and earlier)</td>
+  <td>To offer, in the clipboard, the <strong>screenshots taken in the last twenty minutes</strong>, so you can send one without leaving the conversation. <strong>Off by default</strong>: you must turn on the "Pick up screenshots" setting, which then asks for the permission. Images are read on the device and do not leave it; when you paste one, a temporary copy is made in the app's cache so the receiving app can read it, and it is deleted after an hour.</td>
+</tr>
+</table>
+
+<p>The app asks for neither your location, nor your contacts, nor your camera,
+nor the list of your installed apps.</p>
+
+<h2>Children</h2>
+
+<p>The app is not directed at children and knowingly collects no data about them
+— collecting none about anyone.</p>
+
+<h2>Changes</h2>
+
+<p>If this policy changes, the date at the top changes with it, and the new
+version is published here before the corresponding change reaches the app.</p>
+
+<h2>Contact</h2>
+
+<p>For any question about this policy or your data:
+<a href="mailto:taro.devps@gmail.com">taro.devps@gmail.com</a></p>
+
+</body>
+</html>
